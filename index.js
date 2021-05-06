@@ -6,6 +6,15 @@ const bot = new Discord.Client();
 
 bot.login(token);
 
+bot.on('message', message =>{
+   if(message.content == `${prefix}DM`){
+   member.send("I am a sample message");
+   }
+});
+bot.on('guildMemberAdd', member => {
+   member.send("Welcome " + member.displayName + " to " + member.guild.name);
+});
+
 bot.on('message', message => {
 	if (message.content === `${prefix}ping`) {
 		message.channel.send('Pong.');
