@@ -11,9 +11,9 @@ bot.on('message', message =>{
    member.send("I am a sample message");
    }
 });
-bot.on('guildMemberAdd', member => {
-   member.send("Welcome " + member.displayName + " to " + member.guild.name);
-});
+//bot.on('guildMemberAdd', member => {
+//   member.send("Welcome " + member.displayName + " to " + member.guild.name);
+//});
 
 bot.on('message', message => {
 	if (message.content === `${prefix}ping`) {
