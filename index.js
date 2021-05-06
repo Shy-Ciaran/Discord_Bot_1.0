@@ -1,5 +1,5 @@
 //code here under here blah
-require('dotenv').config()
+
 const Discord = require('discord.js');
 const { prefix } = require('./config.json'); 
 
